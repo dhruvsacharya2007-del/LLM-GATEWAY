@@ -1,0 +1,26 @@
+{
+  "name": "llm-gateway",
+  "version": "0.1.0",
+  "description": "Reverse-proxy gateway that makes LLM usage production-ready: caching, rate limiting, cost accounting, streaming, fallback.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "pino": "^9.3.2",
+    "pino-http": "^10.2.0",
+    "redis": "^4.7.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "pino-pretty": "^13.0.0"
+  }
+}
